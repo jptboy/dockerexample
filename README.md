@@ -29,9 +29,9 @@ Try to use native linux and not a vm, it will be more speedy
 - `sudo docker-compose up`
 - `localhost:8080/gettasks` is the main url of the api
 - type `localhost:8080/gettasks` in webbrowser to see tasks
-- send `{"Name":"YOURTASK"}` as JSON through a post request to `localhost:8080/puttask` to add task
+- send `{"Name":"YOURTASK"}` as JSON through a POST request to `localhost:8080/puttask` to add task
     - refresh your browser, or go to `localhost:8080/gettasks` to check if the task got added
-- send `{"Name":"YOURTASK"}` as JSON through a delete request to `localhost:8080/deltask` to delete task
+- send `{"Name":"YOURTASK"}` as JSON through a DELETE request to `localhost:8080/deltask` to delete task
     - refresh your browser, or go to `localhost:8080/gettasks` to check if the task got deleted
 
 - Use postman or insomnia `sudo snap install insomnia` for POST and DELETE request 
