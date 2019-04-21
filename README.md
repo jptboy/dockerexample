@@ -11,7 +11,9 @@
 - localhost:8080 is the url of the api
 - type `localhost:8080/gettasks` in webbrowser to see tasks
 - send `{"Name":"YOURTASK"}` as JSON through a post request to `localhost:8080/puttask` to add task
+    - refresh your browser, or go to `localhost:8080/gettasks` to check if the task got added
 - send `{"Name":"YOURTASK"}` as JSON through a delete request to `localhost:8080/deltask` to delete task
+    - refresh your browser, or go to `localhost:8080/gettasks` to check if the task got deleted
 
 - Use postman or insomnia `sudo snap install insomnia` for POST and DELETE request 
 
