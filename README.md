@@ -27,7 +27,7 @@ Try to use native linux and not a vm, it will be more speedy
     - Read the terminal output of docker-compose up to gauge when its done since the api wont work before the image is fully setup, and that might require some time
 - `sudo docker-compose build`
 - `sudo docker-compose up`
-- localhost:8080 is the url of the api
+- `localhost:8080/gettasks` is the main url of the api
 - type `localhost:8080/gettasks` in webbrowser to see tasks
 - send `{"Name":"YOURTASK"}` as JSON through a post request to `localhost:8080/puttask` to add task
     - refresh your browser, or go to `localhost:8080/gettasks` to check if the task got added
