@@ -35,5 +35,6 @@ Try to use native linux and not a vm, it will be more speedy
     - refresh your browser, or go to `localhost:8080/gettasks` to check if the task got deleted
 
 - Use postman or insomnia `sudo snap install insomnia` for POST and DELETE request 
+    - to run insomnia type `insomnia` in terminal
 
 # FULLY WORKING REST-API WITH ITS OWN MONGODB INSTANCE BUILT!
