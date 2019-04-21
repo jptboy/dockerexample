@@ -1,3 +1,6 @@
+- clone this repo and change your directory to be inside there
+- `git clone https://github.com/jptboy/dockerexample.git`
+- `cd dockerexample`
 - [install docker ce](https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1)
 - Do the above step with the "Install using the repository"
 - [install docker compose](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04)
