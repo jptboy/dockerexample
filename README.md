@@ -17,7 +17,7 @@ Try to use native linux and not a vm, it will be more speedy
 - If your Ubuntu is not Ubuntu 16.xx the next step might not work, so lookup how to install docker compose for your version
 - [install docker compose for ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04)
     - Run the whole next line, markdown formatting messed up
-    - sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+    - ``sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose``
     - `sudo chmod +x /usr/local/bin/docker-compose`
     - To test if it worked `docker-compose --version`
 
