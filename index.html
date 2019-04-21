@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    var url = "https://0.0.0.0:8080"
+    function alerter()
+    {
+        console.log("e")
+        $.ajax({
+            url: url+"/gettasks",
+            data: null,
+            success: function(data){
+                console.log("success")
+            },
+            error: function(error){
+                console.log(`Error ${error}`);
+            }
+        });
+    }
+</script>
+</head>
+<body>
+<button onclick=alerter()>Tester</button>
+</body>
