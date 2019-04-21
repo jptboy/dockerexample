@@ -1,4 +1,5 @@
 # Installations
+Try to use native linux and not a vm, it will be more speedy
 
 - clone this repo and change your directory to be inside there
 - `git clone https://github.com/jptboy/dockerexample.git`
@@ -15,12 +16,15 @@
 
 - If your Ubuntu is not Ubuntu 16.xx the next step might not work, so lookup how to install docker compose for your version
 - [install docker compose for ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04)
-    - `sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose`
+    - Run the whole next line, markdown formatting messed up
+    - sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
     - `sudo chmod +x /usr/local/bin/docker-compose`
     - To test if it worked `docker-compose --version`
 
 # To run docker image
 
+- Wait for these next two commands, they take a bit. Wait a couple minutes for the second one especially
+    - Read the terminal output of docker-compose up to gauge when its done since the api wont work before the image is fully setup, and that might require some time
 - `sudo docker-compose build`
 - `sudo docker-compose up`
 - localhost:8080 is the url of the api
