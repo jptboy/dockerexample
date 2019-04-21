@@ -1,3 +1,9 @@
+# What this project is
+This project is to show how easy it is to build and run an application on any computer that has Docker installed since all the dependencies are handled for you. If you have Docker and docker-compose installed, running a project is as simple as two lines `sudo docker-compose build` and `sudo docker-compose up`. The application that is running in this Docker container is a simple rest api using Flask and MongoDB that you should test after the Docker container is running. A Docker container is like a vm for the code of the project to run in. You describe what libraries the Docker container should have installed in the Dockerfile of the project and also the docker-compose.yml file of the project.
+
+Step 1: Do the installations step
+Step 2: Do the run docker image and test API step
+ 
 # Installations
 Try to use native linux and not a vm, it will be more speedy
 
@@ -20,7 +26,7 @@ Try to use native linux and not a vm, it will be more speedy
     - `sudo chmod +x /usr/local/bin/docker-compose`
     - To test if it worked `docker-compose --version`
 
-# To run docker image
+# To run docker image and test API
 
 - Wait for these next two commands, they take a bit. Wait a couple minutes for the second one especially
     - Read the terminal output of docker-compose up to gauge when its done since the api wont work before the image is fully setup, and that might require some time
