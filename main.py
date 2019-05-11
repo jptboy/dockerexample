@@ -6,6 +6,7 @@ import datetime
 import json
 import os
 from flask_cors import CORS
+import unittest
 app = Flask(__name__)
 CORS(app)
 
@@ -21,7 +22,7 @@ def getTasks():
                 obj[key] = c[key]
         q.append(obj)
     ret = jsonify(q)
-    return ret
+    return ret,200
 
 @app.route("/puttask",methods = ['POST'])
 def putTask():
@@ -52,4 +53,5 @@ def connectDb():
     27017)
     db = client.flaskdb
     return db.tasks
-app.run(port=8080,host="0.0.0.0")
+if __name__ == "__main__":
+    app.run(port=8080,host="0.0.0.0")
