@@ -1,0 +1,7 @@
+language: python
+services:
+  - docker
+before_install:
+  - sudo docker-compose up
+script:
+  python tests.py
