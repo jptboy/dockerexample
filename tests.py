@@ -17,6 +17,7 @@ class Tests(unittest.TestCase):
             '/puttask',
             data = d
         )
+        # comment
         self.assertEqual(response.status_code,204)
     def testBoth(self):
         d = {"Name":"bar"}
