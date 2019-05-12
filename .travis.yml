@@ -2,4 +2,4 @@ language: python
 services:
   - docker
 script:
-  - sudo docker-compose start up
+  - sudo docker-compose up
