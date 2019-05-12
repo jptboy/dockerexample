@@ -2,5 +2,4 @@ language: python
 services:
   - docker
 script:
-  - sudo docker-compose start db
-  - sudo docker-compose start tests
+  - sudo docker-compose start up
