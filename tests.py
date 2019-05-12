@@ -29,6 +29,7 @@ class Tests(unittest.TestCase):
         res2 = self.app.get(
             "/gettasks"
         )
+        # comment2
         data = json.loads(res2.data.decode('utf-8'))
         flag = False
         for item in data:
