@@ -1,10 +1,8 @@
-tests:
+web:
   build: .
-  command: python tests.py
+  command: python main.py
   ports:
-    - "8081:8081"
-  volumes:
-    - .:/todo
+    - "8080:8080"
   links:
     - db
 db:
