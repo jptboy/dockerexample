@@ -37,7 +37,7 @@ class Tests(unittest.TestCase):
                 flag = True
         self.assertEqual(flag,True)
         self.assertEqual(response.status_code,204)
-        self.assertEqual(res2.status_code,200)
+        self.assertEqual(res2.status_code,201)
 
 if __name__ == "__main__":
     unittest.main()
