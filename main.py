@@ -9,7 +9,10 @@ from flask_cors import CORS
 import unittest
 app = Flask(__name__)
 CORS(app)
-
+@app.route("/newroute",methods=['GET'])
+def cdRoute():
+    x = {"CI/CD":"Working"}
+    return jsonify(x),200
 @app.route("/gettasks",methods = ['GET'])
 def getTasks():
     coll = connectDb()
